@@ -1,6 +1,6 @@
 let chartData = null;
 $(document).ready(function () {
-  let socket = new WebSocket("ws://localhost:8085");
+  let socket = new WebSocket("ws://websocketb2c.herokuapp.com/");
   socket.onopen = function (e) {
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);

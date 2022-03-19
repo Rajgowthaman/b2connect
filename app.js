@@ -25,7 +25,6 @@ app.use(session({
     },
     rolling: true
 }));
-//app.use('/mpros', authenticator.login);
 mongoose.connect(constants.MONGOURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
